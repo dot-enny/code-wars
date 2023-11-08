@@ -1,2 +1,2 @@
 # code-wars
-code wars solutions that i had on my local
+some code wars solutions that i still had saved on my local

@@ -6,7 +6,6 @@ function nthterm (first, n, c) {
         i++;
     }
     return term;
-
     // BigO(n)
 };
 

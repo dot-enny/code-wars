@@ -5,16 +5,16 @@ function findTerms (a, d, n) {
     };
     return result.join(', ');
 };
+
 let args = [1, 2, 3]
 console.log(findTerms(...args))
 
-function findTerms2(a, r, n) {
-    var ret = [a];
+function findTerms2(a, d, n) {
+    var result = [a];
     while (--n) {
-      ret.push(a += r);
-      console.log(a)
+      result.push(a += d);
     }
-    return ret.join(', ');
-}
+    return result.join(', ');
+};
 
   console.log(findTerms2(...args))

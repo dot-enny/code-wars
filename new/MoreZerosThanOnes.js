@@ -1,5 +1,3 @@
-
-
 function moreZeros (str) {
     let newStr = [];
     let checkingHash = {};
@@ -26,6 +24,26 @@ function moreZeros (str) {
 
     return newStr;
 };
+
+
+function moreZeros(str) {
+    const uniqueChars = new Set();
+
+    for (let char of str) {
+        const binaryRepresentation = char.charCodeAt(0).toString(2);
+        const zeros = binaryRepresentation.split('0').length - 1;
+        const ones = binaryRepresentation.split('1').length - 1;
+
+        if (zeros > ones) {
+            uniqueChars.add(char);
+        }
+    }
+
+    return Array.from(uniqueChars);
+};
+
+
+// POSTED
 
 console.log(moreZeros(nameStr));
 console.timeEnd(moreZeros(nameStr));

@@ -45,5 +45,6 @@ function moreZeros(str) {
 
 // POSTED
 
+let nameStr = 'abcde'
 console.log(moreZeros(nameStr));
 console.timeEnd(moreZeros(nameStr));
